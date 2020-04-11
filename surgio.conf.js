@@ -31,6 +31,10 @@ module.exports = {
       name: 'paypal', // 模板中对应 remoteSnippets.paypal
       url: 'https://raw.githubusercontent.com/ConnersHua/Profiles/master/Surge/Ruleset/PayPal.list',
     },
+    {
+      url: 'https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRuleRegex.list',
+      name: 'AdRuleRegex', // remoteSnippets.AdRuleRegex
+    },
   ],
   customFilters: {
     hktFilter: utils.useKeywords(['hkt', 'HKT']),
@@ -40,9 +44,19 @@ module.exports = {
      * Surge
      */
     {
+      name: 'Surge_DlerCloud.conf', // Dler Cloud
+      template: 'surge_dlercloud',
+      provider: 'dlercloud',
+    },
+    {
       name: 'SurgeV3.conf', // 新版 Surge
       template: 'surge_v3',
       provider: 'demo',
+    },
+    {
+      name: 'Clash.yaml',
+      template: 'clash',
+      provider: 'subscribe_demo',
     },
     {
       name: 'Surge_simple.conf', // 旧版 Surge
@@ -60,11 +74,6 @@ module.exports = {
     /**
      * Clash
      */
-    {
-      name: 'Clash.yaml',
-      template: 'clash',
-      provider: 'subscribe_demo',
-    },
 
     /**
      * Quantumult
