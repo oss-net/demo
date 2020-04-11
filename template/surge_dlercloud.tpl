@@ -46,7 +46,7 @@ hide-crashlytics-request = true
 🎬 Netflix = select, {{ getNodeNames(nodeList, netflixFilter) }}
 📺 YouTube = select, 🚀 Proxy, US, HK
 🍎 Apple = select, DIRECT, 🚀 Proxy, US, HK
-🍎 Apple CDN = select, DIRECT, 🍎 Apple
+🍏 Apple CDN = select, DIRECT, 🍎 Apple
 US = url-test, {{ getNodeNames(nodeList, usFilter) }}, url = {{ proxyTestUrl }}, interval = 1200
 HK = url-test, {{ getNodeNames(nodeList, hkFilter) }}, url = {{ proxyTestUrl }}, interval = 1200
 BGP = url-test, {{ getNodeNames(nodeList, customFilters.bgp) }}, url = {{ proxyTestUrl }}, interval = 1200
